@@ -5,12 +5,8 @@
  */
 package prt.springbootthymeleafcrudwebapp.controller;
 
-
 import prt.springbootthymeleafcrudwebapp.model.Employee;
-
 import prt.springbootthymeleafcrudwebapp.service.EmployeeService;
-
-
 
 import java.net.URI;
 import java.util.List;
@@ -28,20 +24,6 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-
-
-/**
-
- *
-
- * @author Laud.Ochei
-
- */
-
-
-
-
-
 @RestController
 @RequestMapping("/api/v1")
 
@@ -52,31 +34,20 @@ import org.springframework.web.util.UriComponentsBuilder;
  */
 public class EmployeeControllerAPI {
     
-    
-    
     private EmployeeService employeeService;
 
 	@Autowired
-
 	public void setEmployeeService(EmployeeService employeeService) {
-
-		this.employeeService = employeeService;
-
+            this.employeeService = employeeService;
 	}
 
 
 
 
         // list page
-
         @RequestMapping(value = "/employeelist", method=GET)
-
         public List<Employee> displayAllStudent(Model model) {
-
             return employeeService.getAllEmployees();
-
         }
 
-        
-    
 }
