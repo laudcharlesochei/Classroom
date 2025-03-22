@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package prt.springbootthymeleafcrudwebapp.controller;
 
 import prt.springbootthymeleafcrudwebapp.model.Employee;
@@ -24,14 +19,16 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-@RestController
-@RequestMapping("/api/v1")
+
 
 
 /**
  *
  * @author laudcharles
  */
+
+@RestController
+@RequestMapping("/api/v1")
 public class EmployeeControllerAPI {
     
     private EmployeeService employeeService;
@@ -40,8 +37,6 @@ public class EmployeeControllerAPI {
 	public void setEmployeeService(EmployeeService employeeService) {
             this.employeeService = employeeService;
 	}
-
-
 
 
         // list page

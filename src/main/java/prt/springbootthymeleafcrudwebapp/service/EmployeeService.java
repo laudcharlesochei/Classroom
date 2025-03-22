@@ -1,4 +1,3 @@
-
 package prt.springbootthymeleafcrudwebapp.service;
 
 import java.util.List;
