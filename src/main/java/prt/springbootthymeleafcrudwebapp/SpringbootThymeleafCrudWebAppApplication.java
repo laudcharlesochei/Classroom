@@ -12,4 +12,4 @@ public class SpringbootThymeleafCrudWebAppApplication {
 
 }
         
-  
+  // FAVOUR CLASS REP
